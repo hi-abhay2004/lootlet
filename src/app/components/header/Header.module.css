@@ -1,0 +1,16 @@
+.navbar { /* Target the AppBar */
+    background-color: #fff;
+}
+
+.logo {
+    height: 40px; /* Adjust as needed */
+    margin-right: 20px;
+}
+.search {
+    background-color: #f0f0f0; /* Example color */
+    position: relative;
+    border-radius: 4px;
+    margin-left: 0;
+    width: 50%;
+}
+

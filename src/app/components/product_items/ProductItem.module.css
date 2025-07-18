@@ -1,0 +1,31 @@
+.productContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 20px; Adjust space between carousel and mini-banner */
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+  }
+  
+  .carouselContainer {
+    flex: 1; /* Takes full space except mini-banner */
+    width: 80%;
+    
+  }
+  
+  .miniBanner {
+    width: 230px; /* Fixed width */
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .miniBanner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures proper scaling */
+  }
+  

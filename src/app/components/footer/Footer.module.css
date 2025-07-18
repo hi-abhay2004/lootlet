@@ -1,0 +1,8 @@
+.footer {
+    background-color: #f8f8f8; /* Example background color */
+    padding: 40px 0; /* Example padding */
+  }
+  
+  .footer a {
+    text-decoration: none; /* Remove underlines from links */
+  }
