@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export', // Enable Static Export
+   // Enable Static Export
     trailingSlash: true, 
 };
 
