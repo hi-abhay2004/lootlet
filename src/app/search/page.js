@@ -1,6 +1,9 @@
 // Ensures this page is treated as a client component for Next.js app directory
 "use client";
 
+// Force dynamic rendering to allow useSearchParams (client-only hook)
+export const dynamic = "force-dynamic";
+
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import ProductList from "../components/ui/ProductList";
