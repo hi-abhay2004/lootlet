@@ -51,7 +51,7 @@ const ProductItem = ({ products = [], subCategory = [], showBanner = true }) => 
                 </Typography>
                 {item.price && (
                   <Typography variant="h6" color="primary" sx={{ marginTop: 1 }}>
-                    {item.price}
+                    ₹{Number(item.price).toFixed(2)}
                   </Typography>
                 )}
               </CardContent>

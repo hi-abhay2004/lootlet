@@ -1,8 +1,12 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { CardMedia, Typography, Button, Grid } from "@mui/material";
+import { useCart } from "../../../context/CartContext";
 
 const ProductDetail = ({ product }) => {
+  const { addToCart } = useCart();
+  const [qty, setQty] = useState(1);
+
   return (
     <div className="max-w-6xl mx-auto p-6">
       <Grid container spacing={4}>
@@ -30,10 +34,23 @@ const ProductDetail = ({ product }) => {
             ⭐ {product.rating} / 5 | {product.stock} in stock
           </Typography>
 
+          {/* Quantity Selector */}
+          <div className="flex items-center gap-2 mt-4">
+            <button
+              className="px-2 py-1 bg-gray-200 rounded"
+              onClick={() => setQty(qty > 1 ? qty - 1 : 1)}
+            >-</button>
+            <span className="px-2">{qty}</span>
+            <button
+              className="px-2 py-1 bg-gray-200 rounded"
+              onClick={() => setQty(qty + 1)}
+            >+</button>
+          </div>
+
           {/* Buttons */}
           <div className="mt-4 flex gap-4">
-            <Button variant="contained" color="primary">Buy Now</Button>
-            <Button variant="outlined" color="secondary">Add to Cart</Button>
+            <Button variant="contained" color="primary" onClick={() => addToCart({ ...product, qty })}>Buy Now</Button>
+            <Button variant="outlined" color="secondary" onClick={() => addToCart({ ...product, qty })}>Add to Cart</Button>
           </div>
         </Grid>
       </Grid>

@@ -11,10 +11,10 @@ const ProductSlider = ({ banner = [] }) => { // ✅ Prevents 'undefined' error
 
   return (
     <div className={styles.productSlider}>
-      <Carousel showThumbs={false} autoPlay infiniteLoop>
-        {banner.map((item) => (
-          <div key={item.id}>
-            <img src={`/banner_images/${item.image}`} alt={`Banner ${item.id}`} />
+      <Carousel showThumbs={false} autoPlay infiniteLoop showStatus={false} showArrows={true} emulateTouch={true}>
+        {banner.map((item, idx) => (
+          <div key={item.id || idx} style={{height: '220px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f5f5f5'}}>
+            <img src={`/banner_images/banner${idx+1}.png`} alt={`Banner ${idx+1}`} style={{maxHeight: '200px', width: "1260px",  margin: '0 auto'}} loading="lazy" />
           </div>
         ))}
       </Carousel>
