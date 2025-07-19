@@ -1,3 +1,4 @@
+// Ensures this page is treated as a client component for Next.js app directory
 "use client";
 
 import { useEffect, useState } from "react";
