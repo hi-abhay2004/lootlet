@@ -32,9 +32,10 @@ const CategoryPage: React.FC<CategoryPageProps> = ({ params }) => {
 
   return (
     <div className="max-w-screen-xl mx-auto my-8 p-4">
-      <Typography variant="h4" className="font-bold text-gray-800 mb-6 capitalize">
-        {category.replace(/-/g, " ")} - {subcategory.replace(/-/g, " ")}
-      </Typography>
+     <Typography variant="h4" className="font-bold text-gray-800 mb-6 capitalize">
+  {(category ?? "").replace(/-/g, " ")} - {(subcategory ?? "").replace(/-/g, " ")}
+</Typography>
+
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
         {products.length === 0 ? (
           <Typography variant="h6" color="textSecondary">No products found</Typography>
