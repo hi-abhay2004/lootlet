@@ -51,18 +51,16 @@ npm install
 
 
 
-🔐 Environment Setup
+## 🔐 Environment Setup 
 Create a .env.local file in the root and add your Clerk keys:
-
-ini
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
 CLERK_SECRET_KEY=your_clerk_secret_key
 💡 You can get these from the Clerk Dashboard
 
-🧑‍💻 Running Locally
+## 🧑‍💻 Running Locally<br/>
 npm run dev
 
 
 
-👨‍💻 Author
+## 👨‍💻 Author <br/>
 Built with 💙 by Abhay
