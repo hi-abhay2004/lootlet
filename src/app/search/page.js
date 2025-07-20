@@ -1,5 +1,5 @@
 // // Ensures this page is treated as a client component for Next.js app directory
-// "use client";
+"use client";
 // export const dynamic = "force-dynamic";
 
 // import { useEffect, useState, Suspense } from "react";
