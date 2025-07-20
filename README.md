@@ -64,3 +64,9 @@ npm run dev
 
 ## 👨‍💻 Author <br/>
 Built with 💙 by Abhay
+
+
+<img width="1883" height="838" alt="17" src="https://github.com/user-attachments/assets/fba2ef40-6422-4ec2-8862-28c8c8c94fb4" />
+<img width="1888" height="832" alt="18" src="https://github.com/user-attachments/assets/40a9fa18-e4de-4adf-b627-ba4d256b9d3c" />
+<img width="1897" height="831" alt="20" src="https://github.com/user-attachments/assets/ef1be885-386c-422a-9c6c-51cf043b656d" />
+<img width="1893" height="835" alt="19" src="https://github.com/user-attachments/assets/9b270d29-d028-4b73-9bec-01262304aa2e" />
